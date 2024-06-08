@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Basic Events of javaScript</title>
+	<style type="text/css">
+		.btn{
+			background: #114466;
+			color: white;
+			padding: 10px 10px 10px 10px;
+			font-family: serif;
+			font-size: 18px;
+		}
+	</style>
+	<script type="text/javascript">
+		function gls(){
+			//document.write("GLS University");
+			alert("GLS University");
+		}
+	</script>
+	<script type="text/javascript">
+		function gls1(){
+			alert("GLS");
+		}
+	</script>
+	<script type="text/javascript">
+		function gls2(){
+			alert("Hiren");
+		}
+	</script>
+	<script type="text/javascript">
+		function gls3(){
+			alert("saved successfully.");
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<button class="btn" onclick="gls()">click me.</button>
+			</tr><br><br>
+			<tr>
+				<button class="btn" ondblclick="gls1()">Double click on me.</button>
+			</tr><br><br>
+			<tr>
+				<button class="btn" onmouseover="gls2()">Hover me.</button>
+			</tr><br><br>
+			<tr>
+				<button class="btn" onmouseout="gls3()">on mouse out</button>
+			</tr><br><br>
+			<tr>
+				<button class="btn" onkeydown="gls3()">on change</button>
+			</tr><br><br>
+			<tr>
+				<button class="btn" onload="gls3()">on load</button>
+			</tr><br><br>
+		</table>
+	</form>
+</body>
+</html>

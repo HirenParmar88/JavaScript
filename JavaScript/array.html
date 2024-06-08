@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array in javaScript</title>
+	<script type="text/javascript">
+		/*let courses=["HTML","CSS","JavaScript","React"];
+		console.log(courses);	//display
+
+		let newarray = [];	//create a new empty array
+		courses.forEach(function(course){
+			newarray.push(course);
+		});
+		console.log(newarray);*/
+
+		let a="hiren";
+		let b="parmar";
+		let c="GLS";
+		document.write(a,"<br>");
+
+		const arr=[10,"hiren","parmar","GLS"];
+		document.write(arr ,"<br>");
+		document.write(arr[1] ,"<br>" );	//find array index position
+
+		const arr1=[];
+		arr1[0]="Hiren";
+		arr1[1]="Parmar";
+		arr1[2]="GLS Uni.";
+		document.write(arr1[1], "<br>");
+
+		//Using the js keyword new
+		const arr2 = new Array("Hiren","Parmar","GLS Uni");
+		document.write(arr2, "<br>");
+
+		//accessing array elements
+		const array=["Hiren","MCA","GLS"];
+		let array_1=array[1];
+		document.write(array_1,"<br>");
+
+		//Changing an array elements.
+		array[1]="BCA";
+		document.write(array, "<br><br>");
+
+		//converting an array to a string
+		const aa=["apple","banana","cherry","mango"];
+		document.write(aa,"<br>");
+
+		document.write(aa.toString(),"<br><br>");	//js toString()
+		let aaa = aa.at(2);	//js array at()
+		document.write(aaa, "<br>");
+		document.write(aa.join("*"),"<br>"); 	// js array join()
+
+		//Array are Objects
+		const person=["hiren","parmar",20];	//array
+		document.write(person,"<br>");
+
+		const person1={firstname:"Hiren", lastname:"Parmar", age:20};
+		document.write(person1.age,"<br><br>");
+
+		//Array Properties and Methods
+		//array1.length	-> Returns the number of elements
+		//array1.sort()	-> sorts the array
+
+		const city=["Ahmedabad", "Bhv", "Rajkot", "Surat"];
+		let length=city.length;
+		document.write(city,"<br>")
+		document.write(city.length,"<br>");
+
+		//accessing the first array element
+		let cities=city[0];
+		document.write(cities,"<br>");
+
+		//accessing the last array ele.
+		let fruits=["Apple", "Banana", "cherry", "Mango"];
+		document.write(fruits,"<br>");
+		let fruit=fruits[fruits.length -1];
+		document.write(fruit , "<br>");
+		fruits.push("Orange");	//adding a new ele.
+		document.write(fruits, "<br><br>");
+
+		//js array pop() method remove the last ele from array
+		const hiren=["Mahuva", "Surat", "Bhv"];
+		document.write(hiren,"<br>");
+		hiren.pop();
+		document.write(hiren,"<br>");
+		//js array push() to add new ele an array.
+		hiren.push("Rajkot");
+		document.write(hiren,"<br>");
+		//js array shift() remove first ele of list.
+		hiren.shift();
+		document.write(hiren,"<br>");
+		//js unshift() method to add new ele begining of array
+		hiren.unshift("Vadodara");
+		document.write(hiren);
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

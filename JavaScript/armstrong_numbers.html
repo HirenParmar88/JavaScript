@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript use to find armstrong numbers.</title>
+	<script type="text/javascript">
+		function isArmstrong(number){
+			const digits = Array.form(String(number),Number);
+			const order = digits.length;
+
+			//calculate the total sum using array.map()
+			const sum = digits.reduce(
+				(acc, digit) =>
+					acc + Math.pow(parseInt(digit), order), 0);
+			if(sum === number){
+				console.log(number + "is armstrong number");
+			}
+			else{
+				console.log(number + "not an armstrong number");
+			}
+		}
+		isArmstrong(1634);
+		isArmstrong(749);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

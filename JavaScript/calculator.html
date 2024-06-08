@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>simple Calculator in javascript</title>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+	//create a js calculator using if..else..if statement and display using the prompt dialog box.
+	<script type="text/javascript">
+		const operator=prompt('Enter operator to perform calculation( + , - , * or / ):');
+
+		const num1=parseFloat(prompt('Enater the first number:'));
+		const num2=parseFloat(prompt('Enter the second number:'));
+
+		if(operator=='+'){
+			result=num1+num2;
+		}
+		else if(operator=='-')
+		{
+			result=num1-num2;
+		}
+		else if(operator=='*')
+		{
+			result=num1*num2;
+		}
+		else{
+			result=num1/num2;
+		}
+
+		//display the result of the calculator.
+		window.alert("Your Result is : " + result);
+	</script>
+</body>
+</html>

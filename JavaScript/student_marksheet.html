@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>create student marksheet using prompt tag</title>
+	<script type="text/javascript">
+		var java;
+		var python;
+		var php;
+		var node;
+		var total;
+
+		var store_java = prompt("Enter marks of java:");
+		var store_python = prompt("Enter marks of python:");
+		var store_php = prompt("Enter marks of php:");
+		var store_node = prompt("Enter marks of node:");
+
+		total = parseInt(store_java)+parseInt(store_python)+parseInt(store_php)+parseInt(store_node);
+		alert("Your total is: "+total);
+
+		if(total>=370 && total<400){
+			alert("distinction.");
+		}
+		else if(total>=330 && total<=370){
+			alert("1st class");
+		}
+		else if(total>=300 && total<=330){
+			alert("2nd class");
+		}
+		else if(total>=200 && total<=300){
+			alert("Pass");
+		}else{
+			alert("Fail");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
